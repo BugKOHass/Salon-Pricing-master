@@ -1,0 +1,117 @@
+$nav-border-color: #d3e0e9;
+
+.parent-view-group-container {
+    border: 1px solid $nav-border-color;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    padding: 20px;
+    .well {
+        border-color: lighten($nav-border-color, 10%);
+        background-color: #fefefe;
+    }
+}
+
+.brand-name {
+    text-transform: capitalize; text-decoration: underline;
+}
+.cat-name {
+    text-transform: capitalize;
+}
+
+.btn {
+    &.btn-discount {
+        display: block;
+        max-width: 90%;
+        margin: 0 auto 20px auto !important;
+    }
+    &.btn-top {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 992px) {
+    .btn-form-lower {
+        margin-top: 27px;
+    }
+}
+@media (max-width: 992px) {
+    .custom-cat-btn {
+        margin-bottom: 12px !important;
+    }
+}
+
+.service-product-seperator {
+    height: 25px;
+    margin: 50px 0;
+    background: darken($nav-border-color, 25%);
+
+}
+
+.subtotal-price, .total-price {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+.total-price {
+    font-size: 1.2em;
+}
+
+.manipulate-link {
+    padding: 6px;
+}
+
+.list-group-item {
+    padding-bottom: 25px !important;
+}
+
+.right-side-price-controls {
+    float: right;
+    input[type="number"] {
+        width: 50px;
+        margin-top: 2px;
+        margin-left: 15px;
+        padding: 3px 3px 6px 3px;
+    }
+}
+
+@media (max-width: 620px) {
+    .right-side-price-controls {
+        display: block;
+        margin: 0 auto;
+        float: none !important;
+    }
+    .list-group-item {
+        text-align: center;
+    }
+}
+
+.clear-price {
+    font-weight: bolder;
+    text-decoration: underline;
+    color: #ddd;
+}
+
+footer.total-price-footer {
+    position: fixed;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    padding: 18px;
+    background: #3498db;
+    font-size: 1.4em;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-container {
+    border: none;
+    border-top: 1px solid $nav-border-color;
+    border-bottom: 1px solid $nav-border-color;
+    padding: 20px;
+    background: #fff;
+    footer {
+        text-align: center;
+        a {
+            color: #636b6f !important;
+        }
+    }
+}
